@@ -15,11 +15,29 @@ Compatible with all major themes, page builders (Elementor, Divi, etc.), and cac
 
 ## 📸 Screenshots
 
-![LCP Optimizer Dashboard](assets/screenshot-1.png)
-*Main dashboard with one-click optimization*
+### Base Settings - One-Click Optimization
+![Base Settings](screenshot-1-base-settings.jpg)
+*Enable optimizations with a single toggle. Smart defaults work out of the box.*
 
-![Performance Testing Tools](assets/screenshot-2.png)
-*Built-in performance testing tools*
+### Advanced Configuration - Custom Selectors
+![Advanced Configuration](screenshot-2-advanced-config.jpg)
+*Fine-tune CSS animation removal and target selectors for your theme.*
+
+### Font Optimization - Google Fonts Control
+![Font Optimization](screenshot-3-font-optimization.jpg)
+*Manual Google Fonts URL control with automatic preloading and font-display swap.*
+
+### Preload Resources - Critical Assets
+![Preload Resources](screenshot-4-preload-resources.jpg)
+*Preload critical CSS, JavaScript, and LCP images for faster rendering.*
+
+### Performance Tools - Built-in Testing
+![Performance Tools](screenshot-5-performance-tools.jpg)
+*One-click access to PageSpeed Insights, GTmetrix, Pingdom, and WebPageTest.*
+
+### Guide & Info - WP Rocket Integration
+![Guide & Info](screenshot-6-guide-info.jpg)
+*Complete WP Rocket configuration guide and troubleshooting tips.*
 
 ---
 
@@ -110,9 +128,8 @@ Compatible with all major themes, page builders (Elementor, Divi, etc.), and cac
 ### Method 1: Download from GitHub (Recommended)
 
 1. **Download** the latest release:
-   ```bash
-   wget https://github.com/emanuelcelano/lcp-optimizer-universal-pro/releases/download/v2.3.2/lcp-optimizer-universal-pro-v2.3.2.zip
-   ```
+   - Go to [Releases](https://github.com/emanuelcelano/lcp-optimizer-universal-pro/releases)
+   - Download `lcp-optimizer-universal-pro-v2.3.2.zip`
 
 2. **Upload** to WordPress:
    - Go to **Plugins** → **Add New** → **Upload Plugin**
@@ -331,7 +348,6 @@ For custom implementation or consulting:
 *Digital Forensics & Cyber Incident Response Specialist*  
 Informatica in Azienda
 
-- 🐦 Twitter: [@emanuelcelano](https://twitter.com/emanuelcelano)
 - 💼 LinkedIn: [emanuelcelano](https://linkedin.com/in/emanuelcelano)
 - 🌐 Website: [analisideirischinformatici.it](https://www.analisideirischinformatici.it)
 
