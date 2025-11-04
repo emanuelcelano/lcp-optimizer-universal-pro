@@ -1,6 +1,6 @@
 # 🚀 LCP Optimizer Universal PRO
 
-[![Version](https://img.shields.io/badge/version-2.3.3-blue.svg)](https://github.com/emanuelcelano/lcp-optimizer-universal-pro/releases)
+[![Version](https://img.shields.io/badge/version-2.3.4-blue.svg)](https://github.com/emanuelcelano/lcp-optimizer-universal-pro/releases)
 [![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-blue.svg)](https://wordpress.org/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-GPL--2.0-green.svg)](LICENSE)
