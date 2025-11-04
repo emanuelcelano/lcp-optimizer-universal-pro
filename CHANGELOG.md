@@ -7,6 +7,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+
+## [2.3.3] - 2024-11-04
+
+### 🔍 Improved
+- **Cache plugin detection messaging:** Now transparent about detection limitations. Shows "may be inactive" to prevent user confusion when installed-but-inactive plugins are detected.
+- **Compatibility mode:** Remains active for safety regardless of plugin active status.
+
+### 📚 Enhanced
+- **Google Fonts documentation:** Added Tip 2 clarifying that manual URL always takes priority over auto-detection.
+- **JavaScript preload warnings:** Added explicit examples of scripts that should NOT be preloaded:
+  - ❌ Analytics (Google Analytics, GTM)
+  - ❌ SEO plugins (Yoast, All-in-One SEO)
+  - ❌ Chat widgets
+  - ❌ Social sharing buttons
+  - ❌ Non-critical third-party scripts
+
+### 🔧 Fixed
+- Added `require_once` for `is_plugin_active()` function to ensure availability
+- Improved error handling in cache plugin detection routine
+- Better admin notice styling for detected plugins
+
+### 💡 User Experience
+- Clearer messaging throughout admin interface
+- Better guidance on when to use advanced features
+- Prevents common misconfigurations that can harm performance
+- More honest about plugin capabilities and limitations
+
+### 🎯 Why This Update
+Due to WordPress plugin loading timing, cache plugin detection may include installed-but-inactive plugins. Rather than hide this technical limitation, we're transparent about it while keeping compatibility mode active for maximum safety.
+
+
 ## [2.3.2] - 2024-10-27
 
 ### 🔗 Added
