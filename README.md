@@ -1,6 +1,6 @@
 # 🚀 LCP Optimizer Universal PRO
 
-[![Version](https://img.shields.io/badge/version-2.3.2-blue.svg)](https://github.com/emanuelcelano/lcp-optimizer-universal-pro/releases)
+[![Version](https://img.shields.io/badge/version-2.3.3-blue.svg)](https://github.com/emanuelcelano/lcp-optimizer-universal-pro/releases)
 [![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-blue.svg)](https://wordpress.org/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-GPL--2.0-green.svg)](LICENSE)
@@ -41,27 +41,51 @@ Compatible with all major themes, page builders (Elementor, Divi, etc.), and cac
 
 ---
 
-## ✨ What's New in Version 2.3.2
+## ✨ What's New in Version 2.3.3
 
-### 🔗 Google Fonts CSS URL Field Restored
+### 🔍 Improved Cache Plugin Detection
+- **ENHANCED:** More honest messaging for cache plugin detection
+- **NEW:** Shows "may be inactive" to prevent user confusion
+- **IMPROVED:** Transparency about detection limitations while keeping compatibility mode active for safety
+
+**New detection message:**
+```
+🔍 Detected Cache Plugins: wp_optimize (may be inactive)
+⚙️ Compatibility mode active for safety
+```
+
+**Why this change:** Due to WordPress plugin loading timing, detection may include installed-but-inactive plugins. Rather than hide this technical limitation, we're transparent about it.
+
+### 📚 Enhanced Documentation
+
+#### Google Fonts
+- **NEW Tip 2:** Clarifies that manual Google Fonts URL always takes priority over auto-detection
+- Prevents confusion about when auto-detection is used vs manual URL
+
+#### JavaScript Preload Warnings
+**Explicit examples of what NOT to preload:**
+- ❌ Analytics (Google Analytics, GTM)
+- ❌ SEO plugins (Yoast, All-in-One SEO)
+- ❌ Chat widgets
+- ❌ Social sharing buttons
+- ❌ Non-critical third-party scripts
+
+**Why:** Preloading these scripts can actually slow down LCP instead of improving it.
+
+### 💡 User Experience Improvements
+- Clearer messaging throughout admin interface
+- Better guidance on when to use advanced features
+- Prevents common misconfigurations that harm performance
+- More honest about plugin capabilities and limitations
+
+### 🛠️ Previous Updates (2.3.2)
 - **FIXED:** Re-added "Google Fonts CSS URL" input field in Font Optimization tab
 - **NEW:** Manual control over Google Fonts URL for better optimization
 - **IMPROVED:** Performance tip to load only required font weights
-- Optional field with auto-detection fallback
 
 ### 🛠️ Previous Updates (2.3.1)
-- **NEW:** Quick-access buttons to performance testing tools
-  - PageSpeed Insights (pre-filled URL)
-  - GTmetrix (pre-filled URL)
-  - Pingdom Tools
-  - WebPageTest (pre-filled URL)
+- **NEW:** Quick-access buttons to performance testing tools (PageSpeed Insights, GTmetrix, Pingdom, WebPageTest)
 - One-click access to industry-standard testing platforms
-
-### 🌍 Previous Updates (2.3.0)
-- Complete English translation of admin panel
-- Enhanced help texts and tooltips
-- Comprehensive WP Rocket configuration guide
-- Security improvements (admin-only debug panel)
 
 [See full changelog →](CHANGELOG.md)
 
@@ -80,7 +104,7 @@ Compatible with all major themes, page builders (Elementor, Divi, etc.), and cac
 - Global `font-display: swap` for instant text rendering
 - Direct preload for WOFF2/WOFF/TTF files
 - Asynchronous Google Fonts loading
-- Manual Google Fonts URL control
+- Manual Google Fonts URL control (with auto-detection fallback)
 - **Performance tip:** Each font adds ~50-100KB
 
 #### 📥 Resource Preloading
@@ -129,7 +153,7 @@ Compatible with all major themes, page builders (Elementor, Divi, etc.), and cac
 
 1. **Download** the latest release:
    - Go to [Releases](https://github.com/emanuelcelano/lcp-optimizer-universal-pro/releases)
-   - Download `lcp-optimizer-universal-pro-v2.3.2.zip`
+   - Download `lcp-optimizer-universal-pro-v2.3.3-updated.zip`
 
 2. **Upload** to WordPress:
    - Go to **Plugins** → **Add New** → **Upload Plugin**
@@ -142,7 +166,7 @@ Compatible with all major themes, page builders (Elementor, Divi, etc.), and cac
 
 ```bash
 cd /path/to/wordpress/wp-content/plugins/
-unzip lcp-optimizer-universal-pro-v2.3.2.zip
+unzip lcp-optimizer-universal-pro-v2.3.3-updated.zip
 ```
 
 Then activate in WordPress admin.
@@ -180,6 +204,7 @@ git clone https://github.com/emanuelcelano/lcp-optimizer-universal-pro.git
 1. Go to **Font Optimization** tab
 2. Add your Google Fonts CSS URL (e.g., `https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap`)
 3. **Pro tip:** Use only 2-3 font weights maximum
+4. **Note:** Manual URL takes priority over auto-detection
 
 #### Fine-tune for Your Theme
 1. Add theme-specific menu selectors if needed:
@@ -239,6 +264,10 @@ mediaelementplayer
 ---
 
 ## 🔍 Troubleshooting
+
+### ❓ Cache Plugin Shows as Detected But It's Inactive?
+
+**This is normal!** Due to WordPress plugin loading timing, the detection may include installed-but-inactive plugins. The compatibility mode stays active for safety, which doesn't negatively affect performance.
 
 ### ❓ Menu Flashing on Page Load?
 
@@ -333,12 +362,19 @@ This project is licensed under the **GPL-2.0 License** - see the [LICENSE](LICEN
 ### Professional Support
 For custom implementation or consulting:
 
+**Dr. Emanuel Celano**  
+*Cybersecurity Expert · Digital Forensics Consultant · Developer*  
+**Informatica in Azienda** - Bologna, Italy
+
 📧 **Email:** info@analisideirischinformatici.it
 
-🌐 **Websites:**
-- [analisideirischinformatici.it](https://www.analisideirischinformatici.it)
-- [certifywebcontent.com](https://www.certifywebcontent.com)
-- [contentprotector.eu](https://contentprotector.eu/)
+🌐 **Professional Services:**
+- [analisideirischinformatici.it](https://www.analisideirischinformatici.it) - IT Risk Analysis & Cybersecurity Consulting
+- [certifywebcontent.com](https://www.certifywebcontent.com) - Digital Content Certification (22 languages)
+- [contentprotector.eu](https://contentprotector.eu) - Content Protection & Certification Services
+- [certifiedpressreleases.com](https://www.certifiedpressreleases.com) - Legally Certified Press Releases (eIDAS + SHA-256)
+
+*Empowering creators, companies, and legal professionals with trusted digital evidence solutions since 2001.*
 
 ---
 
