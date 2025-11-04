@@ -41,6 +41,13 @@ Compatible with all major themes, page builders (Elementor, Divi, etc.), and cac
 
 ---
 
+## ✨ What's New in Version 2.3.4
+
+UX Improvement
+- **Fixed hardcoded default fonts** in Target Font Families field
+- Field now properly empty by default instead of auto-populating with "Quicksand, Roboto, Open Sans"
+- Users have full control over which fonts to optimize
+
 ## ✨ What's New in Version 2.3.3
 
 ### 🔍 Improved Cache Plugin Detection
