@@ -4,7 +4,7 @@
 [![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-blue.svg)](https://wordpress.org/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-GPL--2.0-green.svg)](LICENSE)
-[![Downloads](https://img.shields.io/github/downloads/emanuelcelano/lcp-optimizer-universal-pro/total.svg)](https://github.com/emanuelcelano/lcp-optimizer-universal-pro/releases)
+![Downloads](https://img.shields.io/badge/downloads-private-lightgrey.svg)
 [![Stars](https://img.shields.io/github/stars/emanuelcelano/lcp-optimizer-universal-pro.svg)](https://github.com/emanuelcelano/lcp-optimizer-universal-pro/stargazers)
 
 > **Free WordPress plugin to automatically optimize Core Web Vitals (LCP, INP, CLS) with zero configuration required.**
